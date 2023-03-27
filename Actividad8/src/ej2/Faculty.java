@@ -45,9 +45,9 @@ public class Faculty {
 	public List<Student> getStudentsInResearchGroup(String topic) {
 		return getResearchGroup(topic).getStudentList();
 	}
-	
+
 	public ClassGroup getClassGroup(String identifier) {
-		
+
 		ClassGroup res = null;
 		Iterator<ClassGroup> it = classGroups.iterator();
 		while (it.hasNext() && res == null) {
@@ -56,21 +56,21 @@ public class Faculty {
 				res = group;
 			}
 		}
-		
+
 		return res;
 	}
-	
+
 	public int countStudentsOfClassGroupInResearchGroup(String classIdentifier, String scientistTopic) {
 		ClassGroup group = getClassGroup(classIdentifier);
 		return group.countStudentsInResearchGroup(scientistTopic);
 	}
-	
-	public List<Student> getStudentsWithoutReasearchGroups(){
+
+	public List<Student> getStudentsWithoutReasearchGroups() {
 		List<Student> res = new LinkedList<>();
 		Iterator<Student> it = studentList.iterator();
-		while(it.hasNext()) {
+		while (it.hasNext()) {
 			Student st = it.next();
-			if(st.getResearchGroups().isEmpty()) {
+			if (st.getResearchGroups().isEmpty()) {
 				res.add(st);
 			}
 		}

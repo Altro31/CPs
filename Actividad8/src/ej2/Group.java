@@ -11,7 +11,6 @@ public abstract class Group {
 		studentList = new LinkedList<Student>();
 	}
 
-	
 	/**
 	 * Devuelve la lista de estudiantes de este grupo. Esta lista no es la original
 	 * por lo que los cambios realizados sobre ella no serán reflejados en la
@@ -20,7 +19,8 @@ public abstract class Group {
 	protected List<Student> getStudentList() {
 		return studentList;
 	}
-	
+
 	protected abstract void removeStudent(String name);
+
 	protected abstract void addStudent(Student st);
 }

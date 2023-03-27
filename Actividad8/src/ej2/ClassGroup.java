@@ -90,7 +90,7 @@ public class ClassGroup extends Group {
 				studentList.add(st);
 			}
 		}
-		if(studentList.contains(st)) {
+		if (studentList.contains(st)) {
 			st.setClassGroup(this);
 		}
 	}
