@@ -24,10 +24,10 @@ public class Main {
 		Worker w3= new Worker("646446464654", "Jose", "Informatica", 600);
 		e.addWorker(w3);
 		
-		Worker w4 = new Worker("01987654321", "Miguel", "Direccion", 800);
-		e.addWorker(w4,1);
+		Worker w4 = new Worker("01987654322", "Miguel", "Direccion", 800);
+		e.addWorker(w4,0);
 		
-		Worker w5 = new Worker("01987654321", "Raul", "Direccion", 200);
+		Worker w5 = new Worker("01987654323", "Raul", "Direccion", 200);
 		e.addWorker(w5);
 		
 		printWorkers();

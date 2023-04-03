@@ -33,8 +33,6 @@ public class Main {
 		ia.addStudent(naylet);
 		ia.addStudent(diego);
 
-		ia.removeStudent(naylet.getName());
-		ia.removeStudent(altro.getName());
 
 		fac.getStudentsInResearchGroup(ia.getTopic());
 		i_23.getStudent(diego.getName());
